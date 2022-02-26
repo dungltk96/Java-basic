@@ -20,14 +20,14 @@ public class Lab_21 {
         System.out.println("Please enter your height: ");
         float height = scanner.nextFloat();
 
-        float BMI = weight / (height * height);
-        System.out.println("Result BMI: " + BMI);
+        float bMI = weight / (height * height);
+        System.out.println("Result bMI: " + bMI);
 
-        if (BMI < 18.5) {
+        if (bMI < 18.5) {
             System.out.println("Underweight");
-        } else if (BMI <= 24.9) {
+        } else if (bMI <= 24.9) {
             System.out.println("Normal weight");
-        } else if (BMI < 29.9) {
+        } else if (bMI < 29.9) {
             System.out.println("Overweight");
         } else {
             System.out.println("Obesity");

@@ -15,8 +15,8 @@ public class Lab_23 {
         System.out.println("Please enter your height: ");
         float height = scanner.nextFloat();
 
-        float CurrentBMI = weight / (height * height);
-        System.out.println("Current BMI Results: " + CurrentBMI);
+        float currentBMI = weight / (height * height);
+        System.out.println("Current BMI Results: " + currentBMI);
 
 //        //Solution 1
 //        double NormalBMIAtLeast = 18.5;
@@ -31,23 +31,23 @@ public class Lab_23 {
 //        double DecreaseWeight = BMIDecrease * (height*height);
 
 //        //Solution 2
-        double StandardBMI = 20;
-        double NeedBMI = StandardBMI - CurrentBMI;
-        System.out.printf("You need %f BMI\n", NeedBMI);
-        double DesiredWeight = NeedBMI * (height * height);
+        double standardBMI = 20;
+        double needBMI = standardBMI - currentBMI;
+        System.out.printf("You need %f BMI\n", needBMI);
+        double desiredWeight = needBMI * (height * height);
 
-        if (CurrentBMI < 18.5) {
+        if (currentBMI < 18.5) {
             System.out.println("Underweight");
-            System.out.println("You need to gain at least: " + DesiredWeight + "kg");
-        } else if (CurrentBMI <= 24.9) {
+            System.out.println("You need to gain at least: " + desiredWeight + "kg");
+        } else if (currentBMI <= 24.9) {
             System.out.println("Normal weight");
             System.out.println("Good! Stay keep shape");
-        } else if (CurrentBMI < 29.9) {
+        } else if (currentBMI < 29.9) {
             System.out.println("Overweight");
-            System.out.println("You need to reduce at least: " + DesiredWeight + "kg");
+            System.out.println("You need to reduce at least: " + desiredWeight + "kg");
         } else {
             System.out.println("Obesity");
-            System.out.println("You need to reduce at least: " + DesiredWeight + "kg");
+            System.out.println("You need to reduce at least: " + desiredWeight + "kg");
         }
     }
 }
