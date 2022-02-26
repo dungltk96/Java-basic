@@ -34,20 +34,20 @@ public class Lab_23 {
         double standardBMI = 20;
         double needBMI = standardBMI - currentBMI;
         System.out.printf("You need %f BMI\n", needBMI);
-        double desiredWeight = needBMI * (height * height);
+        double needWeight = needBMI * (height * height);
 
         if (currentBMI < 18.5) {
             System.out.println("Underweight");
-            System.out.println("You need to gain at least: " + desiredWeight + "kg");
+            System.out.println("You need to gain at least: " + needWeight + "kg");
         } else if (currentBMI <= 24.9) {
             System.out.println("Normal weight");
             System.out.println("Good! Stay keep shape");
         } else if (currentBMI < 29.9) {
             System.out.println("Overweight");
-            System.out.println("You need to reduce at least: " + desiredWeight + "kg");
+            System.out.println("You need to reduce at least: " + needWeight + "kg");
         } else {
             System.out.println("Obesity");
-            System.out.println("You need to reduce at least: " + desiredWeight + "kg");
+            System.out.println("You need to reduce at least: " + needWeight + "kg");
         }
     }
 }
