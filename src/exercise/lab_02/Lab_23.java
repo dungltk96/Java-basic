@@ -19,16 +19,16 @@ public class Lab_23 {
         System.out.println("Current BMI Results: " + currentBMI);
 
 //        //Solution 1
-//        double NormalBMIAtLeast = 18.5;
-//        double NormalBMIMost = 24.9;
-
-//        double BMIIncrease = NormalBMIAtLeast - BMI;
-//        System.out.printf("Increase %f BMI \n", BMIIncrease);
-//        double IncreaseWeight = BMIIncrease * (height*height);
-
-//        double BMIDecrease = BMI - NormalBMIMost;
-//        System.out.printf("Decrease %f BMI \n", BMIDecrease);
-//        double DecreaseWeight = BMIDecrease * (height*height);
+//        double normalBMIAtLeast = 18.5;
+//        double normalBMIMost = 24.9;
+//
+//        double bMIIncrease = normalBMIAtLeast - currentBMI;
+//        System.out.printf("Increase %f BMI \n", bMIIncrease);
+//        double increaseWeight = bMIIncrease * (height*height);
+//
+//        double bMIDecrease = currentBMI - normalBMIMost;
+//        System.out.printf("Decrease %f BMI \n", bMIDecrease);
+//        double decreaseWeight = bMIDecrease * (height*height);
 
 //        //Solution 2
         double standardBMI = 20;
