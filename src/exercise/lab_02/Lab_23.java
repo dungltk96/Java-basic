@@ -3,7 +3,7 @@ package exercise.lab_02;
 import java.util.Scanner;
 
 /*
- * (Optional) Lab_01 + Suggest user to increase/decrease weight
+     * (Optional) Lab_01 + Suggest user to increase/decrease weight
  * */
 
 public class Lab_23 {
@@ -18,22 +18,23 @@ public class Lab_23 {
         float currentBMI = weight / (height * height);
         System.out.println("Current BMI Results: " + currentBMI);
 
-//        //Solution 1
-//        double normalBMIAtLeast = 18.5;
-//        double normalBMIMost = 24.9;
-//
-//        double bMIIncrease = normalBMIAtLeast - currentBMI;
-//        System.out.printf("Increase %f BMI \n", bMIIncrease);
-//        double increaseWeight = bMIIncrease * (height*height);
-//
-//        double bMIDecrease = currentBMI - normalBMIMost;
-//        System.out.printf("Decrease %f BMI \n", bMIDecrease);
-//        double decreaseWeight = bMIDecrease * (height*height);
+/*        //Solution 1
+        double normalBMIAtLeast = 18.5;
+        double normalBMIMost = 24.9;
+
+        double bMIIncrease = normalBMIAtLeast - currentBMI;
+        System.out.printf("Increase %f BMI \n", bMIIncrease);
+        double increaseWeight = bMIIncrease * (height*height);
+
+        double bMIDecrease = currentBMI - normalBMIMost;
+        System.out.printf("Decrease %f BMI \n", bMIDecrease);
+        double decreaseWeight = bMIDecrease * (height*height);
+*/
 
 //        //Solution 2
         double standardBMI = 20;
         double needBMI = standardBMI - currentBMI;
-        System.out.printf("You need %f BMI\n", needBMI);
+//        System.out.printf("You need %f BMI\n", needBMI);
         double needWeight = needBMI * (height * height);
 
         if (currentBMI < 18.5) {
