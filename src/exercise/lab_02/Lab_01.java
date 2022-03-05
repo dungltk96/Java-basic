@@ -11,7 +11,7 @@ import java.util.Scanner;
  *   BMI = weight/(height*height)
  * */
 
-public class Lab_21 {
+public class Lab_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter your weight: ");

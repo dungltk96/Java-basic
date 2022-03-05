@@ -6,7 +6,7 @@ import java.util.Scanner;
      * (Optional) Lab_01 + Suggest user to increase/decrease weight
  * */
 
-public class Lab_23 {
+public class Lab_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter your weight: ");
