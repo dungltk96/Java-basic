@@ -2,9 +2,9 @@ package exercise.lab_03;
 
 public class Lab_03_DifferentWay {
     /*
-     * unsorted position --> sorted
-     * swap
-     * */
+     * Unsorted position --> sorted
+     * Swap
+     */
 
     public static void main(String[] args) {
         int[] arr = {12, 34, 1, 16, 16, -1, 28, 2};

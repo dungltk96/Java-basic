@@ -2,7 +2,7 @@ package exercise.lab_03;
 
 /*
  * Merge 2 SHORTED integer array into one SORTED array
- * */
+ */
 
 public class Lab_04 {
     public static void main(String[] args) {
