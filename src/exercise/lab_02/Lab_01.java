@@ -9,7 +9,7 @@ import java.util.Scanner;
  *   Overweight = 25 --> 29.9
  *   Obesity = BMI of 30 or greater
  *   BMI = weight/(height*height)
- * */
+ */
 
 public class Lab_01 {
     public static void main(String[] args) {

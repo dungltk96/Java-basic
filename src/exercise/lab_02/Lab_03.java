@@ -3,8 +3,8 @@ package exercise.lab_02;
 import java.util.Scanner;
 
 /*
-     * (Optional) Lab_01 + Suggest user to increase/decrease weight
- * */
+ *(Optional) Lab_01 + Suggest user to increase/decrease weight
+ */
 
 public class Lab_03 {
     public static void main(String[] args) {
