@@ -6,24 +6,58 @@ package exercise.lab_03;
 
 public class Lab_04 {
     public static void main(String[] args) {
+        int[] arr1 = {5,15,23,30,45};
+        int[] arr2 = {11,20,20,25,50,52};
+        int[] merged = merge(arr1,arr2);
 
-        //Current array
-        int elementIndex = 0;
-        int[] intArrayA = {1, 3, 4, 5, 9};
-        int[] intArrayB = {11, 13, 14, 15, 19};
-        int lengthMerge = intArrayA.length + intArrayB.length;
-        int[] arrMerge = new int[lengthMerge];
+        for (int value : merged) {
+            System.out.print(value + " ");
+        }
+    }
 
-        for (int index = 0; index < lengthMerge; index++) {
-//            if (intArrayA[] > intArrayB[])
-
+    private static int[] merge(int[] arr1, int[] arr2) {
+        if (arr1 == null && arr2 ==null){
+            throw new IllegalArgumentException("Both arr are null");
         }
 
-        //Merge 2 arrays
+        if (arr1.length == 0 && arr2.length == 0){
+            throw new IllegalArgumentException("Both arr are null");
+        }
 
-        //Sort ascending
+        if (arr1 == null || arr1.length == 0){
+            return arr2;
+        }
 
-        //Show array shorted ascending
+        if (arr2 == null || arr2.length == 0){
+            return arr1;
+        }
 
+        int arr1Length = arr1.length;
+        int arr2Length = arr2.length;
+        int[] merged = new int[arr1Length + arr2Length];
+
+        int arr1Index = 0;
+        int arr2Index = 0;
+        int mergedIndex = 0;
+
+        while (arr1Index < arr1Length && arr2Index < arr2Length) {
+            if (arr1[arr1Index] < arr2[arr2Index]) {
+                merged[mergedIndex++] = arr1[arr1Index++];
+//                merged[mergedIndex] = arr1[arr1Index];
+//                mergedIndex++;
+//                arr1Index++;
+            } else {
+                merged[mergedIndex++] = arr2[arr2Index++];
+            }
+        }
+
+        while (arr1Index < arr1Length) {
+            merged[mergedIndex++] = arr1[arr1Index++];
+        }
+
+        while (arr2Index < arr2Length) {
+            merged[mergedIndex++] = arr2[arr2Index++];
+        }
+        return merged;
     }
 }

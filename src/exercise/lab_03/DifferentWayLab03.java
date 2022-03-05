@@ -1,6 +1,6 @@
 package exercise.lab_03;
 
-public class Lab_03_DifferentWay {
+public class DifferentWayLab03 {
     /*
      * Unsorted position --> sorted
      * Swap
