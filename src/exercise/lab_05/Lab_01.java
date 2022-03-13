@@ -1,9 +1,6 @@
 package exercise.lab_05;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
-import java.util.Set;
+import java.util.*;
 
 /*
 * 1. Input student Info [ID, Name]
@@ -16,9 +13,10 @@ public class Lab_01 {
         Map<Integer,  String> studentList = new HashMap<>();
 
         while (isContinuing){
-            System.out.println("========MENU========");
+            System.out.println("================MENU================");
             System.out.println("1. Input student Info [ID, Name]");
             System.out.println("2. Find student by ID");
+            System.out.println("3. Show list of student");
             System.out.println("0. Exit programing!\n");
 
             Scanner scanner = new Scanner(System.in);
@@ -50,6 +48,15 @@ public class Lab_01 {
                         }else {
                             System.out.printf("Student with ID %d not found!\n", studentIdFind);
                         }
+                        break;
+                    case 3:
+                        Set<Map.Entry<Integer, String>> getAllListStudent = studentList.entrySet();
+                        System.out.println("List Student you entered: ");
+
+                        for (Map.Entry<Integer, String> entry : getAllListStudent) {
+                            System.out.println(entry.getKey() + " --> " + entry.getValue());
+                        }
+                        break;
                 }
             }
         }
