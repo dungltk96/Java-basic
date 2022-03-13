@@ -54,7 +54,7 @@ public class Lab_01 {
                         System.out.println("List Student you entered: ");
 
                         for (Map.Entry<Integer, String> entry : getAllListStudent) {
-                            System.out.println(entry.getKey() + " --> " + entry.getValue());
+                            System.out.println("Student ID " + entry.getKey() + " --> " + "Name: " + entry.getValue());
                         }
                         break;
                 }
