@@ -1,4 +1,4 @@
-package exercise.lesson_11;
+package exercise.lab_11;
 
 import java.util.ArrayList;
 import java.util.List;
